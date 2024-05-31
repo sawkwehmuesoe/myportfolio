@@ -1,0 +1,14 @@
+*{
+    font-family : Poppins;
+}
+
+body{
+    background: #080808;
+}
+
+background-image is using in css
+
+logo 140px
+nav font size 10px 
+
+#ff004f

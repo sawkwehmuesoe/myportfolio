@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #080808;
+    color: #fff;
+}
+
+/* Start navbar  */
+
+.navbar{
+    padding: 20px 30px;
+}
+
+.menuitems{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.navbuttons:focus{
+    box-shadow: none;
+}
+
+.lines1,.lines2,.lines3{
+	width: 25px;
+	height: 3px;
+	margin: 6px;
+
+	transition: all 0.5s;
+}
+
+.crossxs .lines1{
+	transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines3{
+	transform: rotate(45deg) translate(-6px,-6px);
+}
+
+.crossxs .lines2{
+	opacity: 0;
+}
+
+/* End Navbar  */
