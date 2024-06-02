@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+header{
+    height: 100vh;
+    background-image: url('../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    position: relative;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     background: #080808;
@@ -17,9 +28,36 @@ body{
 }
 
 .menuitems{
+    color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
+
+    position: relative;
+
+    transition: 0.7s linear;
 }
+
+.menuitems:hover{
+    color: #ed4c7f;
+}
+
+.menuitems::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: #ff004f;
+
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+
+    transition: .5s ease-out;
+}
+
+.menuitems:hover::after{
+    width: 100%;
+}
+
 
 .navbuttons:focus{
     box-shadow: none;
@@ -46,3 +84,49 @@ body{
 }
 
 /* End Navbar  */
+
+/* Start Banner */
+.banners{
+    /* width: 80%; */
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 30px;
+  
+}
+
+.banners-title{
+    font-size: 40px;
+
+    animation-name: bananni;
+    animation-duration: 2s;
+}
+
+.banners-text{
+    font-size: 60px;
+    font-weight: 600;
+
+    animation-name: bananni;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    animation-fill-mode: backwards;
+}
+
+.banners-text span{
+    color: #ff004f;
+}
+
+@keyframes bananni{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+/* End Banner */
