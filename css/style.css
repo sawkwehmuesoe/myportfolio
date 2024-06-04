@@ -37,7 +37,7 @@ body{
     transition: 0.7s linear;
 }
 
-.menuitems:hover{
+.menuitems:hover ,.menuitems.active{
     color: #ed4c7f;
 }
 
@@ -54,7 +54,7 @@ body{
     transition: .5s ease-out;
 }
 
-.menuitems:hover::after{
+.menuitems:hover::after ,.menuitems.active::after{
     width: 100%;
 }
 
@@ -130,3 +130,71 @@ body{
 	}
 }
 /* End Banner */
+
+/* Start About Section */
+
+#about{
+    margin: 100px 0;
+}
+
+.myimgs{
+    width: 30%;
+    border-radius: 10px;
+}
+
+.myimgs img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.abouttexts{
+    padding: 20px 50px;
+}
+
+.abouttexts h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.abouttexts p{
+    color: #f4f4f4bf; 
+}
+
+.abouttabs{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.abouttabs li{
+    list-style: none;
+    /* padding: 10px 20px; */
+}
+
+.abouttabs li a{
+    color: #f4f4f4bf; 
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.tab-container{
+    padding: 20px;
+}
+
+.tab-container .tab-page{
+    display: none;
+}
+
+.tab-container .tab-page h3{
+    color: #f6407a;
+    font-size: 13px;
+}
+
+.tab-container .tab-page p{
+    font-size: 17px;
+}
+
+/* End About Section */
